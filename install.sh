@@ -72,7 +72,7 @@ nvm_source() {
     if [ "_$NVM_METHOD" = "_script" ]; then
       NVM_SOURCE_URL="https://raw.fastgit.org/${NVM_GITHUB_REPO}/${NVM_VERSION}/nvm.sh"
     elif [ "_$NVM_METHOD" = "_git" ] || [ -z "$NVM_METHOD" ]; then
-      NVM_SOURCE_URL="https://hub.fastgit.xyz/${NVM_GITHUB_REPO}.git"
+      NVM_SOURCE_URL="https://gitclone.com/${NVM_GITHUB_REPO}.git"
     else
       nvm_echo >&2 "Unexpected value \"$NVM_METHOD\" for \$NVM_METHOD"
       return 1
